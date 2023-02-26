@@ -12,9 +12,10 @@
 
 # weather app:
 
-weather = 'rain'
+weather = input("how's the weather? ")
 
 if weather == 'rain':
     print("⛱️")
 else:
     print("😎")
+
