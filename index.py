@@ -8,3 +8,13 @@
 # print(f'Food Amount: ${food_amount}')
 # print(f'Tip Amount: ${tip_amount}\n')
 # print(f'total: 😀${total}')
+
+
+# weather app:
+
+weather = 'rain'
+
+if weather == 'rain':
+    print("⛱️")
+else:
+    print("😎")
