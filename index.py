@@ -10,28 +10,65 @@
 # print(f'total: 😀${total}')
 
 
-weather app:
+# weather app
+# weather = input("how's the weather? ")
+# if weather == 'rain':
+#     print("⛱️")
 
-weather = input("how's the weather? ")
-
-if weather == 'rain':
-    print("⛱️")
-
-else:
-    print("😎")
+# else:
+#     print("😎")
 
 # comarison operator
 
-score = int(input("enter your score: "))
+# score = int(input("enter your score: "))
 
 
-if score > 90:
-    print("A")
-elif score>=80:
-    print("B")
-elif score>=70:
-    print("C")
-elif score>=60:
-    print("D")
-else:
-    print("fail")
+# if score > 90:
+#     print("A")
+# elif score>=80:
+#     print("B")
+# elif score>=70:
+#     print("C")
+# elif score>=60:
+#     print("D")
+# else:
+#     print("fail")
+
+
+
+#functions
+
+from unicodedata import name
+
+
+def my_name_is():
+    name = input("what is your name? ") 
+    
+    print(f"your name is: {name}" )
+
+# 1>arguement
+my_name_is()
+
+def my_name(name):
+    print(f'Hey!👋🏻  {name}')
+my_name('Arpit')
+
+
+# 2> multiarguement
+# it will take more than > 1 arguement in function 
+
+def greeting(greet, name):
+    print(f'{greet} 👋🏻 {name}')
+greeting('Hey', 'Arpit')
+
+# 3> default arguement
+def greetings(name, greet= 'hello'):
+    print(f'{greet}! {name}')
+
+greetings('Arpit')
+
+# 4> named arguemtnt
+def greetingss(name, greet):
+    print(f'{greet}! {name}')
+
+greetingss(name= 'Arpit', greet='Heyyaa')
