@@ -1,4 +1,5 @@
 # print("hello")
+<<<<<<< HEAD
 # =======tip calculator:====
 # food_amount = int(input("enter your payment: "))
 # tip_amount = int(input("enter the tip percetage: "))
@@ -214,3 +215,5 @@ list2 = ['ruby', 'javascript', 'python', 'c++']
 
 print(set(list1+list2))
 
+=======
+>>>>>>> 21ea842 (added index.py file)
