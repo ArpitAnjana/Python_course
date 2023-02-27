@@ -103,6 +103,9 @@
 
 # =============================================
 # pro level2 food total:-
+from re import A
+
+
 def calculateFoodTotal(food: float, tip_percentage: int) -> float:
 
     total = (food*(tip_percentage/100))+food
@@ -133,10 +136,20 @@ print(calculateFoodTotal(tip_percentage=20, food=100))
 # print(sum(1,2))
 
 # ==============problem solved==============
-def bigger_guy(a: int,b: int)->int:
-    if a>b:
-        print(a)
-    else:
-        print(b)
+# def bigger_guy(a: float,b: float)->float:
+#     if a>b:
+#         return a
+#     else:
+#         return b
 
-bigger_guy(a=2,b=4)
+# print(bigger_guy(a=2,b=4))
+
+
+# ===============lambda function================
+# anonymous function
+
+def sum(a,b):
+    return a + b
+
+sum2 = lambda a,b : a + b
+print(sum2(5,4))
