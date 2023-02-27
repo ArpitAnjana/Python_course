@@ -95,8 +95,48 @@
 
 # calculateFoodTotal()
 
-def calculateFoodTotal2(foodTotal, tipAmount):
-    total = int((foodTotal*(tipAmount/100))+foodTotal)
-    print(f'the total is: ${total}')
+# def calculateFoodTotal2(foodTotal, tipAmount):
+#     total = int((foodTotal*(tipAmount/100))+foodTotal)
+#     print(f'the total is: ${total}')
 
-calculateFoodTotal2(100,20)
+# calculateFoodTotal2(tipAmount=20,foodTotal=100)
+
+# =============================================
+# pro level2 food total:-
+def calculateFoodTotal(food: float, tip_percentage: int) -> float:
+
+    total = (food*(tip_percentage/100))+food
+    print('------------------------')
+    print(f'Food Amount: ${food}')
+    print(f'Tip Amount: ${tip_percentage}\n')
+    print(f'total: 😀${total}')
+    print('------------------------')
+    return total
+
+print(calculateFoodTotal(tip_percentage=20, food=100))
+
+# =======weather function prolevel==========
+#  =============TYPEHINTING===========
+
+# def weather_to_emoji(weather:str) -> None:
+#     if weather == 'rain':
+#         print("⛱️")
+#     else:
+#         print("😎")
+
+# weather_to_emoji('rain')
+# ===========================================
+
+# def sum(a:int ,b:int) -> int:
+#     return a+b
+
+# print(sum(1,2))
+
+# ==============problem solved==============
+def bigger_guy(a: int,b: int)->int:
+    if a>b:
+        print(a)
+    else:
+        print(b)
+
+bigger_guy(a=2,b=4)
