@@ -106,17 +106,17 @@
 from re import A
 
 
-def calculateFoodTotal(food: float, tip_percentage: int) -> float:
+# def calculateFoodTotal(food: float, tip_percentage: int) -> float:
 
-    total = (food*(tip_percentage/100))+food
-    print('------------------------')
-    print(f'Food Amount: ${food}')
-    print(f'Tip Amount: ${tip_percentage}\n')
-    print(f'total: 😀${total}')
-    print('------------------------')
-    return total
+#     total = (food*(tip_percentage/100))+food
+#     print('------------------------')
+#     print(f'Food Amount: ${food}')
+#     print(f'Tip Amount: ${tip_percentage}\n')
+#     print(f'total: 😀${total}')
+#     print('------------------------')
+#     return total
 
-print(calculateFoodTotal(tip_percentage=20, food=100))
+# print(calculateFoodTotal(tip_percentage=20, food=100))
 
 # =======weather function prolevel==========
 #  =============TYPEHINTING===========
@@ -148,8 +148,16 @@ print(calculateFoodTotal(tip_percentage=20, food=100))
 # ===============lambda function================
 # anonymous function
 
-def sum(a,b):
-    return a + b
+# def sum(a,b):
+#     return a + b
 
-sum2 = lambda a,b : a + b
-print(sum2(5,4))
+# sum2 = lambda a,b : a + b
+# print(sum2(5,4))
+
+# # =================================================
+
+sum3 = lambda a,b : a+b
+print(sum3(1,2))
+assert sum3(1,2) == 3
+
+
