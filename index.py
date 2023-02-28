@@ -202,5 +202,15 @@ def introducer():
     # here networth is a function because of lambda function inside a dictionary (function -> dictionary -> function)
     # i think we use lambda function for inline function
 }
+    person['assets'] = 1000
     print(f"\n hi my name is {person['name']} \n i am wearing {person['shirt']} shirt\n my networth is {person['networth']()}") #we are using {person['networth']()} this because it takes the value from person's networth thats a function inside a dict so we have to say {person['wealth']} but it wont work because it a function inside a dict so we have to write it like {person['networth']()}
 introducer()
+
+
+# ===========sets=============
+
+list1 = ['ruby', 'java', 'python']
+list2 = ['ruby', 'javascript', 'python', 'c++']
+
+print(set(list1+list2))
+
