@@ -152,12 +152,29 @@ from re import A
 #     return a + b
 
 # sum2 = lambda a,b : a + b
-# print(sum2(5,4))
+# print(sum2(5,4)) 
 
 # # =================================================
 
-sum3 = lambda a,b : a+b
-print(sum3(1,2))
-assert sum3(1,2) == 3
+# ==============assert checking=======================
+# sum3 = lambda a,b : a-b
+# print(sum3(1,2))
+# assert sum3(1,2) == 3, 'does not return 3'
 
+# =============================================
 
+# =========LISTS (ARRAYS)===============
+
+fruit = ['🍎','🍏','🍒','🍌']
+print(fruit)
+fruit.append('🍊')
+print(fruit)
+
+# ==========indexing=============
+# ===========slicing==============
+print(fruit[3:5])
+print(fruit[-4:-1])
+print(fruit[0:len(fruit)-1])
+# ======slicing string=============
+print('hy my name is arpit'[0:10])
+print(fruit[::-1])
