@@ -104,6 +104,7 @@
 # =============================================
 # pro level2 food total:-
 from re import A
+from unicodedata import name
 
 
 # def calculateFoodTotal(food: float, tip_percentage: int) -> float:
@@ -165,16 +166,41 @@ from re import A
 
 # =========LISTS (ARRAYS)===============
 
-fruit = ['🍎','🍏','🍒','🍌']
-print(fruit)
-fruit.append('🍊')
-print(fruit)
+# fruit = ['🍎','🍏','🍒','🍌']
+# print(fruit)
+# fruit.append('🍊')
+# print(fruit)
 
-# ==========indexing=============
-# ===========slicing==============
-print(fruit[3:5])
-print(fruit[-4:-1])
-print(fruit[0:len(fruit)-1])
-# ======slicing string=============
-print('hy my name is arpit'[0:10])
-print(fruit[::-1])
+# # ==========indexing=============
+# # ===========slicing==============
+# print(fruit[3:5])
+# print(fruit[-4:-1])
+# print(fruit[0:len(fruit)-1])
+# # ======slicing string=============
+# print('hy my name is arpit'[0:10])
+# print(fruit[::-1])
+
+
+# =============Dictionary===========
+
+# person = {
+#     'name': 'arpit',
+#     'shirt': 'black'
+# }
+# print(person['name'],person['shirt'])
+
+# def networth():
+#     return person['assets']-person['debt']
+
+def introducer():
+    person = {
+    'name': 'arpit',
+    'shirt': 'black',
+    'assets' : 100,
+    'debt': 50,
+    'networth': lambda:person['assets'] - person['debt'] #here we use lambda function bcz in a dictionary we cannot use def in a object of dictionary instead we can use lambda function to create a function inside a dictionary 
+    # here networth is a function because of lambda function inside a dictionary (function -> dictionary -> function)
+    # i think we use lambda function for inline function
+}
+    print(f"\n hi my name is {person['name']} \n i am wearing {person['shirt']} shirt\n my networth is {person['networth']()}") #we are using {person['networth']()} this because it takes the value from person's networth thats a function inside a dict so we have to say {person['wealth']} but it wont work because it a function inside a dict so we have to write it like {person['networth']()}
+introducer()
