@@ -241,17 +241,22 @@ from unicodedata import name
 
 # ==========for loops===============
 
-def fruits():
-    fruit=['🍒','🍓','🍇']
-    for i in enumerate(fruit):
-        print(f'fruit: {i}')
+# def fruits():
+#     fruit=['🍒','🍓','🍇']
+#     for i in enumerate(fruit):
+#         print(f'fruit: {i}')
         
 
-fruits()
+# fruits()
 
-fruit=['🍒','🍓','🍇']
-for i in range(5):
-    fruit.append('🍎')
+# fruit=['🍒','🍓','🍇']
+# for i in range(5):
+#     fruit.append('🍎')
     
-print(fruit)
+# print(fruit)
 
+# -===============while loop=============
+counter = 0
+while counter <10:
+    print(counter)
+    counter +=1
