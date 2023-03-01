@@ -192,25 +192,47 @@ from unicodedata import name
 # def networth():
 #     return person['assets']-person['debt']
 
-def introducer():
-    person = {
-    'name': 'arpit',
-    'shirt': 'black',
-    'assets' : 100,
-    'debt': 50,
-    'networth': lambda:person['assets'] - person['debt'] #here we use lambda function bcz in a dictionary we cannot use def in a object of dictionary instead we can use lambda function to create a function inside a dictionary 
-    # here networth is a function because of lambda function inside a dictionary (function -> dictionary -> function)
-    # i think we use lambda function for inline function
-}
-    person['assets'] = 1000
-    print(f"\n hi my name is {person['name']} \n i am wearing {person['shirt']} shirt\n my networth is {person['networth']()}") #we are using {person['networth']()} this because it takes the value from person's networth thats a function inside a dict so we have to say {person['wealth']} but it wont work because it a function inside a dict so we have to write it like {person['networth']()}
-introducer()
+# def introducer():
+#     person = {
+#     'name': 'arpit',
+#     'shirt': 'black',
+#     'assets' : 100,
+#     'debt': 50,
+#     'networth': lambda:person['assets'] - person['debt'] #here we use lambda function bcz in a dictionary we cannot use def in a object of dictionary instead we can use lambda function to create a function inside a dictionary 
+#     # here networth is a function because of lambda function inside a dictionary (function -> dictionary -> function)
+#     # i think we use lambda function for inline function
+# }
+#     person['assets'] = 1000
+#     print(f"\n hi my name is {person['name']} \n i am wearing {person['shirt']} shirt\n my networth is {person['networth']()}") #we are using {person['networth']()} this because it takes the value from person's networth thats a function inside a dict so we have to say {person['wealth']} but it wont work because it a function inside a dict so we have to write it like {person['networth']()}
+# introducer()
 
 
 # ===========sets=============
 
-list1 = ['ruby', 'java', 'python']
-list2 = ['ruby', 'javascript', 'python', 'c++']
+# list1 = ['ruby', 'java', 'python']
+# list2 = ['ruby', 'javascript', 'python', 'c++']
 
-print(set(list1+list2))
+# print(set(list1+list2))
+# # it selects the unique elements from set
 
+# print(f"this is new:\n{list(set(list1+list2))}")
+
+
+# set function
+def unique():
+    list1 = ['ruby', 'java', 'python']
+    list2 = ['ruby', 'javascript', 'python', 'c++']
+    return f"this is new:\n{list(set(list1+list2))}"
+#     # print(f"this is new:\n{list(set(list1+list2))}")
+
+print(unique())
+
+
+def unique2(languages):
+    return list(set(languages))
+
+print(unique2(["python", "python","java"]))
+
+
+unique3 = lambda languages: list(set(languages))
+print(unique3(["python", "python","java"]))
