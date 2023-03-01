@@ -1,4 +1,10 @@
+():
+    fruit=['🍒','🍓','🍇']
+    for i in enumerate(fruit):
+        print(f'fruit: {i}')
 
-    return list(set(languages))
+    for fruit in range(5):
+        print(fruit)
+        fruit.append('apple')
 
-print(unique2(["python", "python","ja
+fruits()

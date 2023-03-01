@@ -218,21 +218,40 @@ from unicodedata import name
 # print(f"this is new:\n{list(set(list1+list2))}")
 
 
-# set function
-def unique():
-    list1 = ['ruby', 'java', 'python']
-    list2 = ['ruby', 'javascript', 'python', 'c++']
-    return f"this is new:\n{list(set(list1+list2))}"
+# # set function
+# def unique():
+#     list1 = ['ruby', 'java', 'python']
+#     list2 = ['ruby', 'javascript', 'python', 'c++']
+#     return f"this is new:\n{list(set(list1+list2))}"
 #     # print(f"this is new:\n{list(set(list1+list2))}")
 
-print(unique())
+# print(unique())
 
 
-def unique2(languages):
-    return list(set(languages))
+# def unique2(languages):
+#     return list(set(languages))
 
-print(unique2(["python", "python","java"]))
+# print(unique2(["python", "python","java"]))
 
 
-unique3 = lambda languages: list(set(languages))
-print(unique3(["python", "python","java"]))
+# unique3 = lambda languages: list(set(languages))
+# print(unique3(["python", "python","java"]))
+
+
+
+# ==========for loops===============
+
+def fruits():
+    fruit=['🍒','🍓','🍇']
+    for i in enumerate(fruit):
+        print(f'fruit: {i}')
+        
+
+fruits()
+
+fruit=['🍒','🍓','🍇']
+for i in range(5):
+    fruit.append('🍎')
+    
+print(fruit)
+
