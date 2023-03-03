@@ -103,8 +103,14 @@
 
 # =============================================
 # pro level2 food total:-
+from difflib import restore
+from itertools import count
+from optparse import Values
 from re import A
 from unicodedata import name
+from unittest import result
+
+from cv2 import cubeRoot
 
 
 # def calculateFoodTotal(food: float, tip_percentage: int) -> float:
@@ -256,7 +262,102 @@ from unicodedata import name
 # print(fruit)
 
 # -===============while loop=============
-counter = 0
-while counter <10:
-    print(counter)
-    counter +=1
+# counter = 0
+# while counter <10:
+#     print(counter)
+#     counter +=1
+
+
+# ============practice list and loops=============
+
+# def double(numbers:list)->list:
+#     result=[]
+#     for number in numbers:
+#         result.append(number*2)
+#     return result
+
+# print(double([1,2,3]))
+    
+
+# def count_words(phrase):
+#     print(phrase.split())
+#     print(len(phrase.split()))
+    
+# count_words('hy my name is arpit!')
+
+
+# ============sum in list(array)===========
+
+# sum_list([1,2,3])
+# def sum_list(numbers:list)->int:
+#     list1 = list[1,2,3]
+#     for i in numbers:
+        # return list1
+
+
+def sum_list(numbers):
+        count = 0
+        for number in numbers:
+                count+=number
+        return count
+# in more easy manner we can write it like:
+'''
+def sum_list(list1): #here list1 is the arguement we will give containing list values
+        count = 0 #initial value should be 0 so that we can put integer value in it from 0 to length of list 
+        for index in list1: #here i wrote index because it the index in the arguement name list1 
+                count+=index
+        return count
+'''
+print(sum_list(numbers=[1,2,3]))
+
+
+
+def find_max(numbers):
+        current_max = numbers[0]
+        for number in numbers:
+                if number>current_max:
+                        current_max = number
+        return current_max
+
+print(find_max([1,2,3]))
+
+
+#============ dictionary practice============
+
+
+# def word_frequency(phrase):
+#         print(phrase.split())
+#         count = 
+#         for i in phrase:
+#                 if i == phrase.split()
+#         print(set(phrase.split()))
+# word_frequency('i love batman because i am batman')
+
+
+# def word_frequency(phrase):
+#         result = {}
+#         words = phrase.split()
+#         # for word in words:
+#         #         if word not in result:
+#         #                 result[word] = 1
+#         #         else:
+#         #                 result[word] +=1
+#         # return result
+#         for i in words:
+#                 if word not in phrase:
+#                         result[i] = 1
+#                 else:
+#                         result[i]+=1
+#         return result
+# print(word_frequency('i love batman because i am batman'))
+
+def word_frequency(phrase):
+        result = {}
+        words = phrase.split()
+        for word in words:
+                if word not in result:
+                        result[word] = 1
+                else:
+                        result[word] +=1
+        return result
+print(word_frequency('i love batman because i am batman'))
