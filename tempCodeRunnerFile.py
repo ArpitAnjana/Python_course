@@ -1,1 +1,1 @@
-man because i am batman'))
+ numbers if number%2==0])
