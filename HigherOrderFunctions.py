@@ -1,5 +1,6 @@
 # ======higher order function========
 
+from cgi import print_directory
 import numbers
 from unittest import result
 
@@ -41,7 +42,20 @@ def even2(numbers):
 print(list(map(even2,[1,2,3,4,5,6,7,8,9])))
 
 print(list(map(lambda even: even%2==0,[1,2,3,4,5,6,7,8,9])))
-        
+# map takes 2 things before ',' is function itself and after ',' is the input we give
+
+
 # filter(list(map(lambda even: even%2==0,[1,2,3,4,5,6,7,8,9])))
-number=[1,2,3,4,5,6,7,8,9]
-print(list(filter(lambda even3:even3%2==0, number)))
+numbers=[1,2,3,4,5,6,7,8,9]
+print(list(filter(lambda even3:even3%2==0, numbers)))
+# here lamda is function and after ',' is what the output should be
+# filter do is it iterate through list or set anything and then it perfrom the function and then write the desired output whicfh is "TRUE"
+# filter only writes 'TRUE' value
+ 
+
+#  list comprehension
+# filer and print only ODD number
+
+print([number for number in numbers if number%3==0])
+
+print([number*2 for number in numbers if number%2==0])
