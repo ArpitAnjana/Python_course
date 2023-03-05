@@ -8,6 +8,7 @@
 
 # print(f'Food Amount: ${food_amount}')
 # print(f'Tip Amount: ${tip_amount}\n')
+<<<<<<< HEAD
 # print(f'total: 😀${total}')
 
 
@@ -217,3 +218,6 @@ print(set(list1+list2))
 
 =======
 >>>>>>> 21ea842 (added index.py file)
+=======
+# print(f'total: 😀${total}')
+>>>>>>> 4fab707 (comment tip calculator)
